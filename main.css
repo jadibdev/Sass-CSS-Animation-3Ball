@@ -1,0 +1,105 @@
+@keyframes firstRoute {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 700px;
+    top: 0px;
+    border-radius: 0; }
+  50% {
+    left: 700px;
+    top: 400px;
+    border-radius: 100%; }
+  75% {
+    left: 0px;
+    top: 400px;
+    border-radius: 0; }
+  100% {
+    left: 0px;
+    top: 0px;
+    border-radius: 100%; } }
+@keyframes secondRoute {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 700px;
+    top: 0px;
+    border-radius: 0; }
+  50% {
+    left: 700px;
+    top: 0px;
+    border-radius: 100%; }
+  75% {
+    left: 0px;
+    top: 0px;
+    border-radius: 0; }
+  100% {
+    left: 0px;
+    top: 0px;
+    border-radius: 100%; } }
+@keyframes thirdRoute {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 700px;
+    top: 0px;
+    border-radius: 0; }
+  50% {
+    left: 700px;
+    top: -400px;
+    border-radius: 100%; }
+  75% {
+    left: 0px;
+    top: -400px;
+    border-radius: 0; }
+  100% {
+    left: 0px;
+    top: 0px;
+    border-radius: 100%; } }
+@keyframes change-bg {
+  25% {
+    background-color: beige; }
+  50% {
+    background-color: grey; }
+  75% {
+    background-color: beige; }
+  100% {
+    background-color: grey; } }
+.container {
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  border-radius: 100%;
+  position: relative; }
+
+h1 {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-family: 'Montserrat', sans-serif; }
+
+/*.container:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.3); 
+}
+*/
+#first {
+  animation: firstRoute 5s infinite;
+  background-color: red; }
+
+#second {
+  animation: secondRoute 5s infinite;
+  background-color: blue; }
+
+#third {
+  animation: thirdRoute 5s infinite;
+  background-color: yellow; }
+
+body {
+  background-color: grey;
+  animation: change-bg 5s infinite; }
+
+/*# sourceMappingURL=main.css.map */
